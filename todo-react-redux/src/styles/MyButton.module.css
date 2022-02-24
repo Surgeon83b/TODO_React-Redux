@@ -1,0 +1,12 @@
+.myButton {
+    background-color: #3989c9;
+    border: 2px solid #a9d4ab;
+    border-radius: 50%;
+    color: #3989c9;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 28px;
+    font-weight: bold;
+}
