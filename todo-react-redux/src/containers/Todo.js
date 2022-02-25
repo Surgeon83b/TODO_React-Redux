@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { TodoList } from '../components/TodoList';
 import MyButton from '../components/MyButton';
 import '../App.css';
@@ -15,7 +15,6 @@ export function Todo() {
   const dispatch = useDispatch();
   const listOfTodo = useSelector(state => state.listOfTodos);
   const shown = useSelector(state => state.shown);
-  console.log(listOfTodo);
 
   function handleChange(event) {
     dispatch({ type: CHANGE_LIST, shown: event.target.value })

@@ -12,7 +12,7 @@ export const TodoInput = ({ setItem, setList, shown, item }) => {
       onChange={(e) => setItem(e.target.value)}
       onKeyUp={(e) => (e.which === 13) && item && setList()}
       value={item}
-      disabled={shown == 'completed' || shown == 'deleted'}>
+      disabled={shown === 'completed' || shown === 'deleted'}>
     </MyInput>
   )
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-import classes from "../styles/MyButton.module.css";
 import '../App.css';
 
 export default function MyButton({ set, item }) {

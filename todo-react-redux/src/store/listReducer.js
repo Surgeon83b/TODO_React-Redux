@@ -76,7 +76,7 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         shown: action.shown,
-        listOfTodos: action.shown == 'active' ? state.activeTodos : action.shown == 'deleted' ? state.deletedTodos : state.completedTodos
+        listOfTodos: action.shown === 'active' ? state.activeTodos : action.shown === 'deleted' ? state.deletedTodos : state.completedTodos
       }
     default:
       return state;
